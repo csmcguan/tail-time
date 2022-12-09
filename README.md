@@ -1,7 +1,7 @@
 # Tail Time
 Tail Time is a website fingerprinting defense built on top of Walkie-Talkie. In Tail Time, communication between the client and the server is done in half-duplex except for that an active request cannot block queued requests longer than the configured timeout value. Additionally, the cell sequences of website traces are padded using a reference trace to ensure similarity between different websites.
 ## Trace Collection
-Clone the [tor-capture](https://github.com/colmanmcguan/tor-capture) repository and move the provided extensions in ./tail-time/addon to ./tor-capture/visit/addon. Follow the instructions for setup and trace capture provided in the README. After collecting traces, move the ./tor-capture/log to ./tail-time.
+Clone the [tor-capture](https://github.com/csmcguan/tor-capture) repository and move the provided extensions in ./tail-time/addon to ./tor-capture/visit/addon. Follow the instructions for setup and trace capture provided in the README. After collecting traces, move the ./tor-capture/log to ./tail-time.
 ## Padding
 Padding can be applied to all configurations for which there are traces by the following command.
 ```
