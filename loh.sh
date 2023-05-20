@@ -12,7 +12,7 @@ else
         exit 1
     fi
 
-    for CONFIG in $CONFIGS; do
+    for CONFIG in $CONFIGS/*; do
         CONFIG=${CONFIG##*defended/}
         python3 ./util/loh.py $CONFIG >> loh.txt
     done

@@ -13,7 +13,7 @@ else
         exit 1
     fi
 
-    for CONFIG in $CONFIGS; do
+    for CONFIG in $CONFIGS/*; do
         CONFIG=${CONFIG##*log/}
         python3 ./util/pad.py $CONFIG
     done
