@@ -30,14 +30,5 @@ sh bwoh.sh <config>
 ```
 sh loh.sh <config>
 ```
-## Deep Fingerprinting
-The following will put traces for undefended traffic as well as any existing configurations into train, test, and validate .pkl files for use in [Deep Fingerprinting](https://github.com/deep-fingerprinting/df).
-```
-sh mkdfds.sh
-```
-It can also be done for individual configurations by specifying the path to a directory of traces.
-```
-sh mkdfds.sh <path/to/traces>
-```
 ## Reference
 J. Liang, C. Yu, K. Suh and H. Han, "Tail Time Defense Against Website Fingerprinting Attacks," in IEEE Access, vol. 10, pp. 18516-18525, 2022, doi: [10.1109/ACCESS.2022.3146236](https://doi.org/10.1109/ACCESS.2022.3146236).
